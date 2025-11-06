@@ -1,0 +1,10 @@
+{
+  "name": "lunalore",
+  "version": "1.0.0",
+  "description": "A static website for LunaLore - no build required",
+  "scripts": {
+    "build": "echo 'No build needed - this is a static site'"
+  },
+  "private": true
+}
+
