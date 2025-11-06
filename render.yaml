@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: lunalore
-    env: static
-    buildCommand: ""
-    staticPublishPath: .
-    pullRequestPreviewsEnabled: false
-
