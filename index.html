@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌙 LunaLore - Turn Dreams Into Stories</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="clouds">
+        <div class="cloud cloud1"><span></span></div>
+        <div class="cloud cloud2"><span></span></div>
+        <div class="cloud cloud3"><span></span></div>
+        <div class="cloud cloud4"><span></span></div>
+        <div class="cloud cloud5"><span></span></div>
+        <div class="cloud cloud6"><span></span></div>
+    </div>
+    <div class="moon"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="title">
+                <span class="moon-icon">🌙</span>
+                LunaLore
+            </h1>
+            <p class="subtitle">Where dreams become magical stories ✨</p>
+            <button id="view-saved-btn" class="view-saved-btn">📚 View Saved Stories</button>
+        </header>
+
+        <main>
+            <div class="dream-box card">
+                <h2 class="section-title">✨ Share Your Dream</h2>
+                <p class="instruction">Tell us about your dream, and watch it turn into an amazing story!</p>
+                
+                <form id="dream-form">
+                    <textarea 
+                        id="dream-input" 
+                        placeholder="Once upon a time, I dreamed that..."
+                        rows="6"
+                        required
+                    ></textarea>
+                    
+                    <button type="submit" class="submit-btn" id="submit-btn">
+                        <span class="btn-icon">🌙</span>
+                        Turn into Story
+                    </button>
+                </form>
+
+                <div id="loading" class="loading hidden">
+                    <div class="spinner"></div>
+                    <p>Creating your magical story...</p>
+                </div>
+            </div>
+
+            <div id="story-container" class="story-container card hidden">
+                <h2 class="section-title">📖 Your Story</h2>
+                <div id="story-content" class="story-content"></div>
+                <div class="story-actions">
+                    <button id="save-story-btn" class="save-story-btn">
+                        💾 Save Story
+                    </button>
+                    <button id="new-story-btn" class="new-story-btn">
+                        ✨ Create Another Story
+                    </button>
+                </div>
+            </div>
+
+            <div id="saved-stories-container" class="saved-stories-container card hidden">
+                <div class="saved-stories-header">
+                    <h2 class="section-title">📚 Your Saved Stories</h2>
+                    <button id="close-saved-btn" class="close-saved-btn">✕</button>
+                </div>
+                <div id="saved-stories-list" class="saved-stories-list">
+                    <!-- Saved stories will be displayed here -->
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ✨ and 🌙 for dreamers everywhere</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
